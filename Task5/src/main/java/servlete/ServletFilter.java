@@ -47,7 +47,7 @@ public class ServletFilter implements Filter {
         } else {
             /**
              * открыть страницу авторизации при запуске приложения
-             * если в сесии нет данных о пользователи или пути для запросов
+             * если в сесии нет данных о пользователе или пути для запросов
              */
             if (servletPath.equals("/")) {
                 RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/login.jsp");
