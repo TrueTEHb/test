@@ -69,7 +69,7 @@ public class ServletFilter implements Filter {
                 }
                 /**
                  * валидация
-                 * записать в сессию данные пользователя и установить адресс для разрешенных запросов
+                 * записать в сессию данные пользователя и установить адрес для разрешенных запросов
                  * **/
                 if ((name != null & password != null) & (UserService.getInstance().isExistUser(name, password))) {
                     User userByNamePass = UserService.getInstance().getUserByNamePass(name, password);
